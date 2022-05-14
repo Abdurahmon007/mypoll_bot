@@ -1,6 +1,6 @@
 create table users(
   id serial not null Primary key,
-  user_id bigInt not null,
+  user_id bigInt unique not null,
   first_name text,
   user_name text,
   q1 varchar(15),
